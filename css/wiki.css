@@ -2,6 +2,7 @@ body,
 html {
     align-content: center;
     background-color: #fff;
+    background: #000;
     height: 0 auto;
     width: 0 auto;
     font-size: 20px;
@@ -12,25 +13,52 @@ html {
     margin-left: 20%;
     margin-top: 300px;
     height: 33px;
-    width: 50%;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
 }
 
 input {
-    border-top: thin solid #e53535;
-    border-right: thin solid #e53535;
     border-bottom: 0;
-    box-shadow: 0px 1px 1px 1px #e53535;
+    border-right: thin solid #C0C0C0;
+    border-top: thin solid #C0C0C0;
+    box-shadow: 0px 1px 1px 1px #C0C0C0;
+    display: inline-block;
     float: left;
-    height: 32px;
-    width: 90%;
+    height: 39px;
+    width: 50%;
 }
 
 .search-icon {
-    float: right;
-    margin-right: auto;
-    border-bottom: thin solid #e5e5e5;
-    border-right: thin solid #e5e5e5;
-    border-top: thin solid #e5e5e5;
-    border-left: thin solid #e5e5e5;
     cursor: pointer;
+    display: block;
+    float: right;
+    height: 30px;
+    margin-right: auto;
+    width: 47%;
+}
+
+button {
+    color: #63717f;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.search-bar input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.search-bar input#search:-moz-placeholder {
+    /* Firefox 18- */
+    color: #65737e;
+}
+
+.search-bar input#search::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #65737e;
+}
+
+.search-bar input#search:-ms-input-placeholder {
+    color: #65737e;
 }
