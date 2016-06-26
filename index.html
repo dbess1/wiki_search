@@ -4,16 +4,17 @@
 <head>
     <title>Wiki Search</title>
     <link rel="stylesheet" type="text/css" href="css/wiki.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 
 <body>
     <div class="search-bar">
-        <input type="search" placeholder="Search..." name="wiki search" autofocus="">
-        <div class="search-icon">
-        <button><img src="img/search.png"></button>
-        </div>
+        <input type="search" id="searchanything" placeholder="Search..." name="wiki search" autofocus="">
+        <!--<div class="search-icon">
+        <button id="search"><img src="img/search.png"></button>
+        </div>-->
+        <div id="results"></div>
     </div>
     <script type="text/javascript" src="js/wiki.js"></script>
 </body>
-
 </html>
