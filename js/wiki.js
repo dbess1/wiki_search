@@ -1,4 +1,4 @@
-/* Courtesy of the MediaWiki Api: https://www.mediawiki.org/wiki/API:Main_page 
+/* Courtesy of MediaWiki Api: https://www.mediawiki.org/wiki/API:Main_page 
 */
 
 $("#searchanything").keyup(function(e) {
@@ -13,7 +13,8 @@ $("#searchanything").keyup(function(e) {
             $("#results").empty(); // empty() method removes all child nodes of the set of matched elements from the DOM.
             $("#results").append("<br>  " + "</p>");
             $.each(data.query.search, function(i, item) { // .each method iterates over the jQuery object, executing a function for each matched element.
-            $("#results").append("<div><a href='http://en.wikipedia.org/wiki/" + encodeURIComponent(item.title) + "'>" + item.title + "</a><br>" + item.snippet + "<br><br></div>");
+            $("#results").append("<div><a href='http://en.wikipedia.org/wiki/" + encodeURIComponent(item.title) + "'>" + item.title + "</a><br>" + "<br><br></div>");
+            // removed item.snippet
             });
         });
 });

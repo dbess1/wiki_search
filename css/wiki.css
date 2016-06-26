@@ -1,20 +1,27 @@
 body,
 html {
     align-content: center;
-    background-color: #fff;
-    background: #000;
+    background: #fff;
+    font-size: 20px;
     height: 0 auto;
     width: 0 auto;
-    font-size: 20px;
 }
 
 .search-bar {
     float: left;
-    margin-left: 20%;
-    margin-top: 300px;
     height: 33px;
+    margin-left: 30%;
+    margin-top: 200px;
+    padding: 15px;
     position: relative;
     vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.instructions {
+    color: #000;
+    max-width: 300px;
     white-space: nowrap;
     width: 100%;
 }
@@ -27,7 +34,7 @@ input {
     display: inline-block;
     float: left;
     height: 39px;
-    width: 50%;
+    width: 40%;
 }
 
 .search-icon {
@@ -41,8 +48,8 @@ input {
 
 button {
     color: #63717f;
-    -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
 .search-bar input#search::-webkit-input-placeholder {
